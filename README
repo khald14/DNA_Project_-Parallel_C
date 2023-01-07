@@ -1,0 +1,16 @@
+STUDENT NAME: KHALED SALAMAH
+STUDENT ID: 322563677
+
+NOTES:
+This program uses just MPI and openMP, no CUDA functions are implemented.
+the main process read the input from the file and measure the offset by dividing the sequence 1  and sequence 2 length, after that the program divides the offset equally to both processes and each process run the mutant function and alignment_score function and get his optimal mutant(that has the best score).
+after the 2 processes complete the offset, the main process compares the two results and prints the optimal result(according to max or min) in the file.
+
+mutant: function and alignment_score function use openMP, because we want to run on sq2 just once and get the optimal mutant for the current offset, openMP divide the work in the for to 4 threads
+which makes the for faster.
+
+alignment_score function also uses openMP, the for work is divided between 4 threads.
+
+
+The program calculates the runing duration and print it on the console.
+

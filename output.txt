@@ -1,0 +1,2 @@
+best mutant: WUIRFHWOJDFHWUOIFHWEUI 
+Alignment Score: 66.000000  and offset : 10 
